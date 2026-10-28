@@ -218,3 +218,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- phasecast: research data and generated files (never commit raw donor data) ---
+*.xlsx
+~$*
+processed/
+manifest.csv
+.pytest_cache/

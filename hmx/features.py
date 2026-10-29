@@ -1,4 +1,4 @@
-"""Early-window feature engineering.
+﻿"""Early-window feature engineering.
 
 For each position (sample) and observation cutoff T, features are computed ONLY from observations with
 elapsed time <= T. Three feature levels are kept distinguishable in the column prefix:
@@ -143,20 +143,28 @@ def aggregate_to_donor(table: pd.DataFrame, how: str = "mean") -> pd.DataFrame:
 
 
 def join_endpoints(table: pd.DataFrame, endpoints: pd.DataFrame, level: str = "donor") -> pd.DataFrame:
-    """Attach supplied endpoint values (fusion_index). Returns the table with an empty fusion_index column
-    when no endpoints were supplied - nothing is imputed or invented."""
+    """Attach supplied endpoint values (fusion index, desmin, AChE ...) by donor id.
+
+    A *join* (merge) matches rows of two tables on a key column; here the key is ``donor_id`` and the match is
+    exact. Donors without an endpoint row, and 'Unresolved'/'Unassigned' pseudo-donors, get empty (NaN) values -
+    nothing is imputed or invented. With no endpoint table the table is returned with empty endpoint columns.
+    """
     if endpoints is None or endpoints.empty:
         out = table.copy()
         out["fusion_index"] = np.nan
         return out
-    if level == "donor":
-        e = endpoints.groupby("donor_id", observed=True)["fusion_index"].mean().reset_index()
-        return table.merge(e, on="donor_id", how="left")
-    return table.merge(endpoints[["sample_id", "fusion_index"]], on="sample_id", how="left")
-
+    ecols = [c for c in endpoints.columns if c.endswith(("_pct", "_u_ml")) or c == "fusion_index"]
+    e = endpoints[["donor_id"] + ecols].copy()
+    if "fusion_index" not in e and "fi_pct" in e:
+        e["fusion_index"] = e["fi_pct"]          # convenience alias: FI (%) is the project's fusion index
+    e["donor_id"] = e["donor_id"].astype(str)
+    out = table.copy()
+    out["donor_id"] = out["donor_id"].astype(str)
+    return out.merge(e, on="donor_id", how="left")
 
 def default_feature_sets(cells: pd.DataFrame, frames: pd.DataFrame) -> tuple[list[str], list[str]]:
     """Sensible default cell-level and frame-level features for the early-window page."""
     cell_feats = [f for f in spec.HEADLINE_CELL_FEATURES if f in cells]
     frame_feats = [f for f in ["confluence_pct", "n_cells"] if f in frames] + [f for f in ["area_um2", "hull_convexity", "optical_thickness_avg_um"] if f in cells]
     return cell_feats, frame_feats
+

@@ -1,4 +1,4 @@
-"""Read-only access to workbook / CSV contents. Original files are never opened for writing."""
+﻿"""Read-only access to workbook / CSV contents. Original files are never opened for writing."""
 from __future__ import annotations
 
 import csv
@@ -84,3 +84,18 @@ def key_value_rows(rows: Rows, stop_at_blank_after: int = 0) -> dict[str, Any]:
         if len(row) >= 2 and isinstance(row[0], str) and row[0].strip().endswith(":") and row[1] not in (None, ""):
             out[row[0].strip().rstrip(":")] = row[1]
     return out
+
+def peek_first_cells(path: Path, n: int = 1) -> list:
+    """First `n` cells of the first row of the first sheet (cheap look used to recognise endpoint workbooks)."""
+    p = Path(path)
+    if p.suffix.lower() == ".csv":
+        rows = read_csv_rows(p)
+        return list(rows[0][:n]) if rows else []
+    wb = openpyxl.load_workbook(p, read_only=True, data_only=True)
+    try:
+        ws = wb[wb.sheetnames[0]]
+        for row in ws.iter_rows(min_row=1, max_row=1, values_only=True):
+            return list(row[:n])
+        return []
+    finally:
+        wb.close()

@@ -1,134 +1,141 @@
 ﻿table,internal_name,original_name,unit,source_sheets,description,interpretation_status,mapping,observed_in_samples
-cells,area_um2,Area (µm²),µm²,All cells,Area of the segmented cell region.,as exported,explicit,1
-cells,boxed_breadth_um,Boxed breadth (µm),µm,All cells,Breadth of the cell's bounding box (name-based).,requires confirmation,explicit,1
-cells,boxed_center_x_um,Boxed center pos X (µm),µm,All cells,X position of the bounding-box centre in the image.,as exported,explicit,1
-cells,boxed_center_y_um,Boxed center pos Y (µm),µm,All cells,Y position of the bounding-box centre in the image.,as exported,explicit,1
-cells,boxed_length_um,Boxed length (µm),µm,All cells,Length of the cell's bounding box (name-based).,requires confirmation,explicit,1
-cells,centroid_x_um,Centroid pos X (µm),µm,All cells,X position of the cell centroid in the image.,as exported,explicit,1
-cells,centroid_y_um,Centroid pos Y (µm),µm,All cells,Y position of the cell centroid in the image.,as exported,explicit,1
-cells,eccentricity,Eccentricity,none stated,All cells,"Definition not stated in the export; interpretation inferred from the name only (0 = circular, towards 1 = elongated).",requires confirmation,explicit,1
-cells,hull_convexity,Hull convexity,none stated,All cells,Definition not stated in the export; interpretation inferred from the name only; presumably relates the cell region to its convex hull.,requires confirmation,explicit,1
-cells,irregularity,Irregularity,none stated,All cells,Definition not stated in the export; interpretation inferred from the name only; higher presumably means a less regular outline.,requires confirmation,explicit,1
-cells,opl_avg_um,Optical path length avg (µm),µm,All cells,Mean optical path length over the cell (name-based).,requires confirmation,explicit,1
-cells,opl_max_um,Optical path length max (µm),µm,All cells,Maximum optical path length within the cell (name-based).,requires confirmation,explicit,1
-cells,optical_thickness_avg_um,Optical thickness avg (µm),µm,All cells,Mean optical thickness over the cell.,as exported,explicit,1
-cells,optical_thickness_max_um,Optical thickness max (µm),µm,All cells,Maximum optical thickness within the cell.,as exported,explicit,1
-cells,optical_volume_um3,Optical volume (µm³),µm³,All cells,Optical volume of the cell (integral of optical thickness over area; name-based).,requires confirmation,explicit,1
-cells,peak_x_um,Peak pos X (µm),µm,All cells,X position of the peak (maximum) value within the cell (name-based).,requires confirmation,explicit,1
-cells,peak_y_um,Peak pos Y (µm),µm,All cells,Y position of the peak (maximum) value within the cell (name-based).,requires confirmation,explicit,1
-cells,perimeter_um,Perimeter length (µm),µm,All cells,Length of the cell outline.,as exported,explicit,1
-cells,phaseshift_avg,Phaseshift avg,none stated,All cells,Mean phase shift within the cell; unit not stated in this sheet (Frame info lists phase shift in rad).,requires confirmation,explicit,1
-cells,phaseshift_max,Phaseshift max,none stated,All cells,Maximum phase shift within the cell; unit not stated.,requires confirmation,explicit,1
-cells,phaseshift_min,Phaseshift min,none stated,All cells,Minimum phase shift within the cell; unit not stated.,requires confirmation,explicit,1
-cells,phaseshift_std,Phaseshift std. dev.,none stated,All cells,Standard deviation of phase shift within the cell; unit not stated.,requires confirmation,explicit,1
-cells,phaseshift_sum,Phaseshift sum,none stated,All cells,Sum of phase shift over the cell; unit not stated.,requires confirmation,explicit,1
-cells,roughness_rms,Roughness RMS,none stated,All cells,Definition not stated in the export; interpretation inferred from the name only.,requires confirmation,explicit,1
-cells,roughness_avg,Roughness avg,none stated,All cells,Definition not stated in the export; interpretation inferred from the name only.,requires confirmation,explicit,1
-cells,roughness_kurtosis,Roughness kurtosis,none stated,All cells,Definition not stated in the export; interpretation inferred from the name only.,requires confirmation,explicit,1
-cells,roughness_skewness,Roughness skewness,none stated,All cells,Definition not stated in the export; interpretation inferred from the name only.,requires confirmation,explicit,1
-cells,shape_convexity,Shape convexity,none stated,All cells,Definition not stated in the export; interpretation inferred from the name only; differs from 'Hull convexity' in a way the export does not specify.,requires confirmation,explicit,1
-cells,texture_clustershade,Texture clustershade,none stated,All cells,Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,1
-cells,texture_clustertendency,Texture clustertendency,none stated,All cells,Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,1
-cells,texture_contrast,Texture contrast,none stated,All cells,Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,1
-cells,texture_correlation,Texture correlation,none stated,All cells,Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,1
-cells,texture_correlation_info1,Texture correlation info1,none stated,All cells,Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,1
-cells,texture_correlation_info2,Texture correlation info2,none stated,All cells,Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,1
-cells,texture_energy,Texture energy,none stated,All cells,Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,1
-cells,texture_entropy,Texture entropy,none stated,All cells,Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,1
-cells,texture_homogeneity,Texture homogeneity,none stated,All cells,Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,1
-cells,texture_maxprob,Texture maxprob,none stated,All cells,Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,1
-frames,exp_avg_area_um2,Area (µm²),µm²,Frame stats,Software-exported per-frame average of the cell feature. Area of the segmented cell region.,as exported,explicit,1
-frames,exp_avg_boxed_breadth_um,Boxed breadth (µm),µm,Frame stats,Software-exported per-frame average of the cell feature. Breadth of the cell's bounding box (name-based).,requires confirmation,explicit,1
-frames,exp_avg_boxed_center_x_pxl,Boxed center pos X (pxl),pxl,Frame stats,Software-exported per-frame average of the cell feature. Software-exported frame average; position in pixels.,as exported,explicit,1
-frames,exp_avg_boxed_center_y_pxl,Boxed center pos Y (pxl),pxl,Frame stats,Software-exported per-frame average of the cell feature. Software-exported frame average; position in pixels.,as exported,explicit,1
-frames,exp_avg_boxed_length_um,Boxed length (µm),µm,Frame stats,Software-exported per-frame average of the cell feature. Length of the cell's bounding box (name-based).,requires confirmation,explicit,1
-frames,exp_avg_centroid_x_um,Centroid pos X (µm),µm,Frame stats,Software-exported per-frame average of the cell feature. X position of the cell centroid in the image.,as exported,explicit,1
-frames,exp_avg_centroid_y_um,Centroid pos Y (µm),µm,Frame stats,Software-exported per-frame average of the cell feature. Y position of the cell centroid in the image.,as exported,explicit,1
-frames,confluence_pct,Confluence (%),%,Frame stats,Percentage of the frame covered by cells (as exported).,as exported,explicit,1
-frames,exp_avg_eccentricity,Eccentricity,none stated,Frame stats,"Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only (0 = circular, towards 1 = elongated).",requires confirmation,explicit,1
-frames,exp_avg_hull_convexity,Hull convexity,none stated,Frame stats,Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only; presumably relates the cell region to its convex hull.,requires confirmation,explicit,1
-frames,image_area_um2,Image area (µm²),µm²,Frame info,Imaged area in µm².,as exported,explicit,1
-frames,image_height_pxl,Image height (pxl),pxl,Frame info,Image height in pixels.,as exported,explicit,1
-frames,image_height_um,Image height (µm),µm,Frame info,Image height in µm.,as exported,explicit,1
-frames,scale_um_per_pxl,Image scale factor (µm/pxl),µm/pxl,Frame info,Pixel size; used to interpret µm positions.,as exported,explicit,1
-frames,image_width_pxl,Image width (pxl),pxl,Frame info,Image width in pixels.,as exported,explicit,1
-frames,image_width_um,Image width (µm),µm,Frame info,Image width in µm.,as exported,explicit,1
-frames,exp_avg_irregularity,Irregularity,none stated,Frame stats,Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only; higher presumably means a less regular outline.,requires confirmation,explicit,1
-frames,laser_wavelength_nm,Laser wavelength (nm),nm,Frame info,Laser wavelength.,as exported,explicit,1
-frames,max_phase_shift_rad,Max phase shift (rad),rad,Frame info,Maximum phase shift in the image.,as exported,explicit,1
-frames,min_phase_shift_rad,Min phase shift (rad),rad,Frame info,Minimum phase shift in the image.,as exported,explicit,1
-frames,n_cells,No. Cells,none stated,Frame stats,Number of (non-edge) cells in the frame.,as exported,explicit,1
-frames,exp_avg_opl_avg_um,Optical path length avg (µm),µm,Frame stats,Software-exported per-frame average of the cell feature. Mean optical path length over the cell (name-based).,requires confirmation,explicit,1
-frames,exp_avg_opl_max_um,Optical path length max (µm),µm,Frame stats,Software-exported per-frame average of the cell feature. Maximum optical path length within the cell (name-based).,requires confirmation,explicit,1
-frames,exp_avg_optical_thickness_avg_um,Optical thickness avg (µm),µm,Frame stats,Software-exported per-frame average of the cell feature. Mean optical thickness over the cell.,as exported,explicit,1
-frames,exp_avg_optical_thickness_max_um,Optical thickness max (µm),µm,Frame stats,Software-exported per-frame average of the cell feature. Maximum optical thickness within the cell.,as exported,explicit,1
-frames,exp_avg_optical_volume_um3,Optical volume (µm³),µm³,Frame stats,Software-exported per-frame average of the cell feature. Optical volume of the cell (integral of optical thickness over area; name-based).,requires confirmation,explicit,1
-frames,exp_avg_peak_x_pxl,Peak pos X (pxl),pxl,Frame stats,Software-exported per-frame average of the cell feature. Software-exported frame average; position in pixels.,as exported,explicit,1
-frames,exp_avg_peak_y_pxl,Peak pos Y (pxl),pxl,Frame stats,Software-exported per-frame average of the cell feature. Software-exported frame average; position in pixels.,as exported,explicit,1
-frames,exp_avg_perimeter_um,Perimeter length (µm),µm,Frame stats,Software-exported per-frame average of the cell feature. Length of the cell outline.,as exported,explicit,1
-frames,exp_avg_phaseshift_avg,Phaseshift avg,none stated,Frame stats,Software-exported per-frame average of the cell feature. Mean phase shift within the cell; unit not stated in this sheet (Frame info lists phase shift in rad).,requires confirmation,explicit,1
-frames,exp_avg_phaseshift_max,Phaseshift max,none stated,Frame stats,Software-exported per-frame average of the cell feature. Maximum phase shift within the cell; unit not stated.,requires confirmation,explicit,1
-frames,exp_avg_phaseshift_min,Phaseshift min,none stated,Frame stats,Software-exported per-frame average of the cell feature. Minimum phase shift within the cell; unit not stated.,requires confirmation,explicit,1
-frames,exp_avg_phaseshift_std,Phaseshift std. dev.,none stated,Frame stats,Software-exported per-frame average of the cell feature. Standard deviation of phase shift within the cell; unit not stated.,requires confirmation,explicit,1
-frames,exp_avg_phaseshift_sum,Phaseshift sum,none stated,Frame stats,Software-exported per-frame average of the cell feature. Sum of phase shift over the cell; unit not stated.,requires confirmation,explicit,1
-frames,exp_avg_roughness_rms,Roughness RMS,none stated,Frame stats,Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only.,requires confirmation,explicit,1
-frames,exp_avg_roughness_avg,Roughness avg,none stated,Frame stats,Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only.,requires confirmation,explicit,1
-frames,exp_avg_roughness_kurtosis,Roughness kurtosis,none stated,Frame stats,Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only.,requires confirmation,explicit,1
-frames,exp_avg_roughness_skewness,Roughness skewness,none stated,Frame stats,Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only.,requires confirmation,explicit,1
-frames,exp_avg_shape_convexity,Shape convexity,none stated,Frame stats,Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only; differs from 'Hull convexity' in a way the export does not specify.,requires confirmation,explicit,1
-frames,exp_avg_texture_clustershade,Texture clustershade,none stated,Frame stats,Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,1
-frames,exp_avg_texture_clustertendency,Texture clustertendency,none stated,Frame stats,Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,1
-frames,exp_avg_texture_contrast,Texture contrast,none stated,Frame stats,Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,1
-frames,exp_avg_texture_correlation,Texture correlation,none stated,Frame stats,Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,1
-frames,exp_avg_texture_correlation_info1,Texture correlation info1,none stated,Frame stats,Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,1
-frames,exp_avg_texture_correlation_info2,Texture correlation info2,none stated,Frame stats,Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,1
-frames,exp_avg_texture_energy,Texture energy,none stated,Frame stats,Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,1
-frames,exp_avg_texture_entropy,Texture entropy,none stated,Frame stats,Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,1
-frames,exp_avg_texture_homogeneity,Texture homogeneity,none stated,Frame stats,Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,1
-frames,exp_avg_texture_maxprob,Texture maxprob,none stated,Frame stats,Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,1
-frames,total_phase_shift_rad,Total phase shift (rad),rad,Frame info,Total phase shift in the image (name-based).,requires confirmation,explicit,1
-track_averages,avg_area_um2,Avg. Area (µm²),µm²,Averages,Average over tracked cells at each time point (software 'Averages' sheet). Cell area at this time point (matches the morphology export for linked cells).,as exported,explicit,1
-track_averages,avg_irregularity,Avg. Irregularity,none stated,Averages,Average over tracked cells at each time point (software 'Averages' sheet). Irregularity at this time point (see morphology dictionary).,requires confirmation,explicit,1
-track_averages,avg_migration_um,Avg. Migration (µm),µm,Averages,Average over tracked cells at each time point (software 'Averages' sheet). Straight-line distance of 'Relative pos X/Y' from the track origin (founder cell: its own first position; daughter: its parent's last position). Checked arithmetically.,validated in data,explicit,1
-track_averages,avg_migration_directness,Avg. Migration directness (migration vs motility),none stated,Averages,Average over tracked cells at each time point (software 'Averages' sheet). Migration / Motility (net displacement ÷ accumulated distance). Checked arithmetically.,validated in data,explicit,1
-track_averages,avg_motility_um,Avg. Motility (µm),µm,Averages,"Average over tracked cells at each time point (software 'Averages' sheet). Accumulated path length. For a daughter it starts at the distance from the parent's last position to its first position (not 0), then adds step lengths. Checked arithmetically.",validated in data,explicit,1
-track_averages,avg_motility_speed_um_h,Avg. Motility speed (µm/h),µm/h,Averages,"Average over tracked cells at each time point (software 'Averages' sheet). Mean speed (path length / time), not a per-step instantaneous speed. On the sample it equals the mean over a trailing window (about 2.5 h; the window is inferred from the data, see QC) and the cumulative mean while Age is shorter than the window. Window setting requires confirmation.",requires confirmation,explicit,1
-track_averages,avg_optical_thickness_avg_um,Avg. Optical thickness avg (µm),µm,Averages,Average over tracked cells at each time point (software 'Averages' sheet). Mean optical thickness at this time point.,as exported,explicit,1
-track_averages,avg_optical_volume_um3,Avg. Optical volume (µm³),µm³,Averages,Average over tracked cells at each time point (software 'Averages' sheet). Optical volume at this time point.,requires confirmation,explicit,1
-track_averages,n_tracked_cells,No. tracked cells,none stated,Averages,Not in the explicit mapping; kept with an auto-generated name.,requires confirmation,explicit,1
-track_matrix,area_um2,Area (µm²),µm²,Area (µm²),Cell area at this time point (matches the morphology export for linked cells).,as exported,explicit,1
-track_matrix,irregularity,Irregularity,none stated,Irregularity,Irregularity at this time point (see morphology dictionary).,requires confirmation,explicit,1
-track_matrix,migration_um,Migration (µm),µm,Migration (µm),Straight-line distance of 'Relative pos X/Y' from the track origin (founder cell: its own first position; daughter: its parent's last position). Checked arithmetically.,validated in data,explicit,1
-track_matrix,migration_directness,Migration directness (migration vs motility),none stated,Migration directness (migration,Migration / Motility (net displacement ÷ accumulated distance). Checked arithmetically.,validated in data,explicit,1
-track_matrix,motility_um,Motility (µm),µm,Motility (µm),"Accumulated path length. For a daughter it starts at the distance from the parent's last position to its first position (not 0), then adds step lengths. Checked arithmetically.",validated in data,explicit,1
-track_matrix,motility_speed_um_h,Motility speed (µm/h),µm/h,Motility speed (µmh),"Mean speed (path length / time), not a per-step instantaneous speed. On the sample it equals the mean over a trailing window (about 2.5 h; the window is inferred from the data, see QC) and the cumulative mean while Age is shorter than the window. Window setting requires confirmation.",requires confirmation,explicit,1
-track_matrix,optical_thickness_avg_um,Optical thickness avg (µm),µm,Optical thickness avg (µm),Mean optical thickness at this time point.,as exported,explicit,1
-track_matrix,optical_volume_um3,Optical volume (µm³),µm³,Optical volume (µm³),Optical volume at this time point.,requires confirmation,explicit,1
-track_obs,age_s,Age (s),s,Cell n (one sheet per tracked family),Time since the track's first observation.,validated in data,explicit,1
-track_obs,area_um2,Area (µm²),µm²,Cell n (one sheet per tracked family),Cell area at this time point (matches the morphology export for linked cells).,as exported,explicit,1
-track_obs,end_status,End status,none stated,Cell n (one sheet per tracked family),"Fate recorded on the last row of a track (e.g. Divides, Migrates out of frame, Disappears, Stays until end).",as exported,explicit,1
-track_obs,irregularity,Irregularity,none stated,Cell n (one sheet per tracked family),Irregularity at this time point (see morphology dictionary).,requires confirmation,explicit,1
-track_obs,migration_um,Migration (µm),µm,Cell n (one sheet per tracked family),Straight-line distance of 'Relative pos X/Y' from the track origin (founder cell: its own first position; daughter: its parent's last position). Checked arithmetically.,validated in data,explicit,1
-track_obs,migration_directness,Migration directness (migration vs motility),none stated,Cell n (one sheet per tracked family),Migration / Motility (net displacement ÷ accumulated distance). Checked arithmetically.,validated in data,explicit,1
-track_obs,motility_um,Motility (µm),µm,Cell n (one sheet per tracked family),"Accumulated path length. For a daughter it starts at the distance from the parent's last position to its first position (not 0), then adds step lengths. Checked arithmetically.",validated in data,explicit,1
-track_obs,motility_speed_um_h,Motility speed (µm/h),µm/h,Cell n (one sheet per tracked family),"Mean speed (path length / time), not a per-step instantaneous speed. On the sample it equals the mean over a trailing window (about 2.5 h; the window is inferred from the data, see QC) and the cumulative mean while Age is shorter than the window. Window setting requires confirmation.",requires confirmation,explicit,1
-track_obs,optical_thickness_avg_um,Optical thickness avg (µm),µm,Cell n (one sheet per tracked family),Mean optical thickness at this time point.,as exported,explicit,1
-track_obs,optical_volume_um3,Optical volume (µm³),µm³,Cell n (one sheet per tracked family),Optical volume at this time point.,requires confirmation,explicit,1
-track_obs,rel_x_um,Relative pos X (µm),µm,Cell n (one sheet per tracked family),X position relative to the track origin: founder cells start at 0; a daughter is measured from its parent's last position (validated against centroids of linked cells).,validated in data,explicit,1
-track_obs,rel_y_um,Relative pos Y (µm),µm,Cell n (one sheet per tracked family),Y position relative to the track origin (see Relative pos X).,validated in data,explicit,1
-frames/cells,sample_id,(derived),none stated,-,"Position identifier = relative folder + shared file-name key (e.g. 'A1P6'). It is a pairing key, NOT a donor identifier.",derived by this software,explicit,1
-frames/cells,acquired_at,Date time,none stated,Frame stats; All cells,"Frame acquisition date-time parsed day-first (dd/mm/yyyy hh:mm:ss), 1 s resolution.",as exported,explicit,1
-frames/cells,elapsed_h,(derived),h,-,Hours since the first frame of the same position (derived from Date time).,derived by this software,explicit,1
-frames/cells,elapsed_s,(derived),s,-,Seconds since the first frame of the same position.,derived by this software,explicit,1
-frames/cells/track_obs,frame_no,Frame no. / Source Frames 'Number',none stated,Frame stats; All cells; Info (tracking),Frame index within a position (1-based).,as exported,explicit,1
-frames/cells,frame_id,Frame ID,none stated,Frame stats; All cells,Software frame identifier.,as exported,explicit,1
-cells,cell_id,Cell ID,none stated,All cells,Cell label WITHIN a frame. It is NOT a persistent track identifier (the same cell has different IDs in different frames).,as exported,explicit,1
-cells,region,Region(s),none stated,All cells,Region label; empty in the sample ('No. regions: 0').,as exported,explicit,1
-frames,experiment / group / description,Experiment / Group / Description,none stated,Frame stats,Free-text labels written by the software. Not interpreted as donor/plate identifiers.,as exported,explicit,1
-track_obs,track_id,Cell / Cell name,none stated,Cell n; feature matrices,"Tracked cell name, e.g. 'Cell 4-1-2' (daughter of 'Cell 4-1' by naming convention, validated against End status).",as exported,explicit,1
-track_obs,family,(sheet name),none stated,Cell n,Worksheet name = tracked cell family (root cell and all descendants).,as exported,explicit,1
-track_obs,elapsed_s,Time,s,Cell n; matrices; Averages,Time since the first frame of the position (hh:mm:ss as timedelta in Excel).,as exported,explicit,1
-track_obs,parent_id / generation,(derived from names),none stated,-,Parent track and division generation derived from the dash-separated name.,derived by this software,explicit,1
-track_obs,morph_cell_id / link_status,(derived),none stated,-,"INFERRED link to the morphology cell: exact equality of frame, Area and Optical volume, validated by centroid displacement. Not an identifier supplied by the software.",derived by this software,explicit,1
-track_summary,(all columns),(derived),none stated,-,Per-track kinematics recomputed from Relative pos X/Y; 'exported_*' columns are the last exported cumulative values.,derived by this software,explicit,1
-samples,"donor_id, run_id, well_id, position_id, passage, culture_date, fusion_index",manifest.csv,none stated,-,Provided by the user manifest; 'Unassigned' when missing. Never inferred from file names.,as exported,explicit,1
+cells,area_um2,Area (µm²),µm²,All cells,Area of the segmented cell region.,as exported,explicit,119
+cells,boxed_breadth_um,Boxed breadth (µm),µm,All cells,Breadth of the cell's bounding box (name-based).,requires confirmation,explicit,119
+cells,boxed_center_x_um,Boxed center pos X (µm),µm,All cells,X position of the bounding-box centre in the image.,as exported,explicit,119
+cells,boxed_center_y_um,Boxed center pos Y (µm),µm,All cells,Y position of the bounding-box centre in the image.,as exported,explicit,119
+cells,boxed_length_um,Boxed length (µm),µm,All cells,Length of the cell's bounding box (name-based).,requires confirmation,explicit,119
+cells,centroid_x_um,Centroid pos X (µm),µm,All cells,X position of the cell centroid in the image.,as exported,explicit,119
+cells,centroid_y_um,Centroid pos Y (µm),µm,All cells,Y position of the cell centroid in the image.,as exported,explicit,119
+cells,eccentricity,Eccentricity,none stated,All cells,"Definition not stated in the export; interpretation inferred from the name only (0 = circular, towards 1 = elongated).",requires confirmation,explicit,119
+cells,hull_convexity,Hull convexity,none stated,All cells,Definition not stated in the export; interpretation inferred from the name only; presumably relates the cell region to its convex hull.,requires confirmation,explicit,119
+cells,irregularity,Irregularity,none stated,All cells,Definition not stated in the export; interpretation inferred from the name only; higher presumably means a less regular outline.,requires confirmation,explicit,119
+cells,opl_avg_um,Optical path length avg (µm),µm,All cells,Mean optical path length over the cell (name-based).,requires confirmation,explicit,119
+cells,opl_max_um,Optical path length max (µm),µm,All cells,Maximum optical path length within the cell (name-based).,requires confirmation,explicit,119
+cells,optical_thickness_avg_um,Optical thickness avg (µm),µm,All cells,Mean optical thickness over the cell.,as exported,explicit,119
+cells,optical_thickness_max_um,Optical thickness max (µm),µm,All cells,Maximum optical thickness within the cell.,as exported,explicit,119
+cells,optical_volume_um3,Optical volume (µm³),µm³,All cells,Optical volume of the cell (integral of optical thickness over area; name-based).,requires confirmation,explicit,119
+cells,peak_x_um,Peak pos X (µm),µm,All cells,X position of the peak (maximum) value within the cell (name-based).,requires confirmation,explicit,119
+cells,peak_y_um,Peak pos Y (µm),µm,All cells,Y position of the peak (maximum) value within the cell (name-based).,requires confirmation,explicit,119
+cells,perimeter_um,Perimeter length (µm),µm,All cells,Length of the cell outline.,as exported,explicit,119
+cells,phaseshift_avg,Phaseshift avg,none stated,All cells,Mean phase shift within the cell; unit not stated in this sheet (Frame info lists phase shift in rad).,requires confirmation,explicit,119
+cells,phaseshift_max,Phaseshift max,none stated,All cells,Maximum phase shift within the cell; unit not stated.,requires confirmation,explicit,119
+cells,phaseshift_min,Phaseshift min,none stated,All cells,Minimum phase shift within the cell; unit not stated.,requires confirmation,explicit,119
+cells,phaseshift_std,Phaseshift std. dev.,none stated,All cells,Standard deviation of phase shift within the cell; unit not stated.,requires confirmation,explicit,119
+cells,phaseshift_sum,Phaseshift sum,none stated,All cells,Sum of phase shift over the cell; unit not stated.,requires confirmation,explicit,119
+cells,roughness_rms,Roughness RMS,none stated,All cells,Definition not stated in the export; interpretation inferred from the name only.,requires confirmation,explicit,119
+cells,roughness_avg,Roughness avg,none stated,All cells,Definition not stated in the export; interpretation inferred from the name only.,requires confirmation,explicit,119
+cells,roughness_kurtosis,Roughness kurtosis,none stated,All cells,Definition not stated in the export; interpretation inferred from the name only.,requires confirmation,explicit,119
+cells,roughness_skewness,Roughness skewness,none stated,All cells,Definition not stated in the export; interpretation inferred from the name only.,requires confirmation,explicit,119
+cells,shape_convexity,Shape convexity,none stated,All cells,Definition not stated in the export; interpretation inferred from the name only; differs from 'Hull convexity' in a way the export does not specify.,requires confirmation,explicit,119
+cells,texture_clustershade,Texture clustershade,none stated,All cells,Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,119
+cells,texture_clustertendency,Texture clustertendency,none stated,All cells,Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,119
+cells,texture_contrast,Texture contrast,none stated,All cells,Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,119
+cells,texture_correlation,Texture correlation,none stated,All cells,Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,119
+cells,texture_correlation_info1,Texture correlation info1,none stated,All cells,Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,119
+cells,texture_correlation_info2,Texture correlation info2,none stated,All cells,Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,119
+cells,texture_energy,Texture energy,none stated,All cells,Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,119
+cells,texture_entropy,Texture entropy,none stated,All cells,Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,119
+cells,texture_homogeneity,Texture homogeneity,none stated,All cells,Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,119
+cells,texture_maxprob,Texture maxprob,none stated,All cells,Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,119
+frames,exp_avg_area_um2,Area (µm²),µm²,Frame stats,Software-exported per-frame average of the cell feature. Area of the segmented cell region.,as exported,explicit,119
+frames,exp_avg_boxed_breadth_um,Boxed breadth (µm),µm,Frame stats,Software-exported per-frame average of the cell feature. Breadth of the cell's bounding box (name-based).,requires confirmation,explicit,119
+frames,exp_avg_boxed_center_x_pxl,Boxed center pos X (pxl),pxl,Frame stats,Software-exported per-frame average of the cell feature. Software-exported frame average; position in pixels.,as exported,explicit,119
+frames,exp_avg_boxed_center_y_pxl,Boxed center pos Y (pxl),pxl,Frame stats,Software-exported per-frame average of the cell feature. Software-exported frame average; position in pixels.,as exported,explicit,119
+frames,exp_avg_boxed_length_um,Boxed length (µm),µm,Frame stats,Software-exported per-frame average of the cell feature. Length of the cell's bounding box (name-based).,requires confirmation,explicit,119
+frames,exp_avg_centroid_x_um,Centroid pos X (µm),µm,Frame stats,Software-exported per-frame average of the cell feature. X position of the cell centroid in the image.,as exported,explicit,119
+frames,exp_avg_centroid_y_um,Centroid pos Y (µm),µm,Frame stats,Software-exported per-frame average of the cell feature. Y position of the cell centroid in the image.,as exported,explicit,119
+frames,confluence_pct,Confluence (%),%,Frame stats,Percentage of the frame covered by cells (as exported).,as exported,explicit,119
+frames,exp_avg_eccentricity,Eccentricity,none stated,Frame stats,"Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only (0 = circular, towards 1 = elongated).",requires confirmation,explicit,119
+frames,exp_avg_hull_convexity,Hull convexity,none stated,Frame stats,Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only; presumably relates the cell region to its convex hull.,requires confirmation,explicit,119
+frames,image_area_um2,Image area (µm²),µm²,Frame info,Imaged area in µm².,as exported,explicit,119
+frames,image_height_pxl,Image height (pxl),pxl,Frame info,Image height in pixels.,as exported,explicit,119
+frames,image_height_um,Image height (µm),µm,Frame info,Image height in µm.,as exported,explicit,119
+frames,scale_um_per_pxl,Image scale factor (µm/pxl),µm/pxl,Frame info,Pixel size; used to interpret µm positions.,as exported,explicit,119
+frames,image_width_pxl,Image width (pxl),pxl,Frame info,Image width in pixels.,as exported,explicit,119
+frames,image_width_um,Image width (µm),µm,Frame info,Image width in µm.,as exported,explicit,119
+frames,exp_avg_irregularity,Irregularity,none stated,Frame stats,Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only; higher presumably means a less regular outline.,requires confirmation,explicit,119
+frames,laser_wavelength_nm,Laser wavelength (nm),nm,Frame info,Laser wavelength.,as exported,explicit,119
+frames,max_phase_shift_rad,Max phase shift (rad),rad,Frame info,Maximum phase shift in the image.,as exported,explicit,119
+frames,min_phase_shift_rad,Min phase shift (rad),rad,Frame info,Minimum phase shift in the image.,as exported,explicit,119
+frames,n_cells,No. Cells,none stated,Frame stats,Number of (non-edge) cells in the frame.,as exported,explicit,119
+frames,exp_avg_opl_avg_um,Optical path length avg (µm),µm,Frame stats,Software-exported per-frame average of the cell feature. Mean optical path length over the cell (name-based).,requires confirmation,explicit,119
+frames,exp_avg_opl_max_um,Optical path length max (µm),µm,Frame stats,Software-exported per-frame average of the cell feature. Maximum optical path length within the cell (name-based).,requires confirmation,explicit,119
+frames,exp_avg_optical_thickness_avg_um,Optical thickness avg (µm),µm,Frame stats,Software-exported per-frame average of the cell feature. Mean optical thickness over the cell.,as exported,explicit,119
+frames,exp_avg_optical_thickness_max_um,Optical thickness max (µm),µm,Frame stats,Software-exported per-frame average of the cell feature. Maximum optical thickness within the cell.,as exported,explicit,119
+frames,exp_avg_optical_volume_um3,Optical volume (µm³),µm³,Frame stats,Software-exported per-frame average of the cell feature. Optical volume of the cell (integral of optical thickness over area; name-based).,requires confirmation,explicit,119
+frames,exp_avg_peak_x_pxl,Peak pos X (pxl),pxl,Frame stats,Software-exported per-frame average of the cell feature. Software-exported frame average; position in pixels.,as exported,explicit,119
+frames,exp_avg_peak_y_pxl,Peak pos Y (pxl),pxl,Frame stats,Software-exported per-frame average of the cell feature. Software-exported frame average; position in pixels.,as exported,explicit,119
+frames,exp_avg_perimeter_um,Perimeter length (µm),µm,Frame stats,Software-exported per-frame average of the cell feature. Length of the cell outline.,as exported,explicit,119
+frames,exp_avg_phaseshift_avg,Phaseshift avg,none stated,Frame stats,Software-exported per-frame average of the cell feature. Mean phase shift within the cell; unit not stated in this sheet (Frame info lists phase shift in rad).,requires confirmation,explicit,119
+frames,exp_avg_phaseshift_max,Phaseshift max,none stated,Frame stats,Software-exported per-frame average of the cell feature. Maximum phase shift within the cell; unit not stated.,requires confirmation,explicit,119
+frames,exp_avg_phaseshift_min,Phaseshift min,none stated,Frame stats,Software-exported per-frame average of the cell feature. Minimum phase shift within the cell; unit not stated.,requires confirmation,explicit,119
+frames,exp_avg_phaseshift_std,Phaseshift std. dev.,none stated,Frame stats,Software-exported per-frame average of the cell feature. Standard deviation of phase shift within the cell; unit not stated.,requires confirmation,explicit,119
+frames,exp_avg_phaseshift_sum,Phaseshift sum,none stated,Frame stats,Software-exported per-frame average of the cell feature. Sum of phase shift over the cell; unit not stated.,requires confirmation,explicit,119
+frames,exp_avg_roughness_rms,Roughness RMS,none stated,Frame stats,Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only.,requires confirmation,explicit,119
+frames,exp_avg_roughness_avg,Roughness avg,none stated,Frame stats,Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only.,requires confirmation,explicit,119
+frames,exp_avg_roughness_kurtosis,Roughness kurtosis,none stated,Frame stats,Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only.,requires confirmation,explicit,119
+frames,exp_avg_roughness_skewness,Roughness skewness,none stated,Frame stats,Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only.,requires confirmation,explicit,119
+frames,exp_avg_shape_convexity,Shape convexity,none stated,Frame stats,Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only; differs from 'Hull convexity' in a way the export does not specify.,requires confirmation,explicit,119
+frames,exp_avg_texture_clustershade,Texture clustershade,none stated,Frame stats,Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,119
+frames,exp_avg_texture_clustertendency,Texture clustertendency,none stated,Frame stats,Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,119
+frames,exp_avg_texture_contrast,Texture contrast,none stated,Frame stats,Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,119
+frames,exp_avg_texture_correlation,Texture correlation,none stated,Frame stats,Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,119
+frames,exp_avg_texture_correlation_info1,Texture correlation info1,none stated,Frame stats,Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,119
+frames,exp_avg_texture_correlation_info2,Texture correlation info2,none stated,Frame stats,Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,119
+frames,exp_avg_texture_energy,Texture energy,none stated,Frame stats,Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,119
+frames,exp_avg_texture_entropy,Texture entropy,none stated,Frame stats,Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,119
+frames,exp_avg_texture_homogeneity,Texture homogeneity,none stated,Frame stats,Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,119
+frames,exp_avg_texture_maxprob,Texture maxprob,none stated,Frame stats,Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.,requires confirmation,explicit,119
+frames,total_phase_shift_rad,Total phase shift (rad),rad,Frame info,Total phase shift in the image (name-based).,requires confirmation,explicit,119
+track_averages,avg_area_um2,Avg. Area (µm²),µm²,Averages,Average over tracked cells at each time point (software 'Averages' sheet). Cell area at this time point (matches the morphology export for linked cells).,as exported,explicit,119
+track_averages,x_avg_centroid_pos_x_m,Avg. Centroid pos X (µm),µm,Averages,Not in the explicit mapping; kept with an auto-generated name.,requires confirmation,auto,9
+track_averages,x_avg_centroid_pos_y_m,Avg. Centroid pos Y (µm),µm,Averages,Not in the explicit mapping; kept with an auto-generated name.,requires confirmation,auto,9
+track_averages,avg_irregularity,Avg. Irregularity,none stated,Averages,Average over tracked cells at each time point (software 'Averages' sheet). Irregularity at this time point (see morphology dictionary).,requires confirmation,explicit,119
+track_averages,avg_migration_um,Avg. Migration (µm),µm,Averages,Average over tracked cells at each time point (software 'Averages' sheet). Straight-line distance of 'Relative pos X/Y' from the track origin (founder cell: its own first position; daughter: its parent's last position). Checked arithmetically.,validated in data,explicit,119
+track_averages,avg_migration_directness,Avg. Migration directness (migration vs motility),none stated,Averages,Average over tracked cells at each time point (software 'Averages' sheet). Migration / Motility (net displacement ÷ accumulated distance). Checked arithmetically.,validated in data,explicit,119
+track_averages,avg_motility_um,Avg. Motility (µm),µm,Averages,"Average over tracked cells at each time point (software 'Averages' sheet). Accumulated path length. For a daughter it starts at the distance from the parent's last position to its first position (not 0), then adds step lengths. Checked arithmetically.",validated in data,explicit,119
+track_averages,avg_motility_speed_um_h,Avg. Motility speed (µm/h),µm/h,Averages,"Average over tracked cells at each time point (software 'Averages' sheet). Mean speed (path length / time), not a per-step instantaneous speed. On the sample it equals the mean over a trailing window (about 2.5 h; the window is inferred from the data, see QC) and the cumulative mean while Age is shorter than the window. Window setting requires confirmation.",requires confirmation,explicit,119
+track_averages,avg_optical_thickness_avg_um,Avg. Optical thickness avg (µm),µm,Averages,Average over tracked cells at each time point (software 'Averages' sheet). Mean optical thickness at this time point.,as exported,explicit,109
+track_averages,avg_optical_volume_um3,Avg. Optical volume (µm³),µm³,Averages,Average over tracked cells at each time point (software 'Averages' sheet). Optical volume at this time point.,requires confirmation,explicit,109
+track_averages,n_tracked_cells,No. tracked cells,none stated,Averages,Not in the explicit mapping; kept with an auto-generated name.,requires confirmation,explicit,119
+track_matrix,area_um2,Area (µm²),µm²,Area (µm²),Cell area at this time point (matches the morphology export for linked cells).,as exported,explicit,119
+track_matrix,x_cell_tree,Cell tree,none stated,Cell tree,Not in the explicit mapping; kept with an auto-generated name.,requires confirmation,auto,2
+track_matrix,x_centroid_pos_x_m,Centroid pos X (µm),µm,Centroid pos X (µm),Not in the explicit mapping; kept with an auto-generated name.,requires confirmation,auto,9
+track_matrix,x_centroid_pos_y_m,Centroid pos Y (µm),µm,Centroid pos Y (µm),Not in the explicit mapping; kept with an auto-generated name.,requires confirmation,auto,9
+track_matrix,irregularity,Irregularity,none stated,Irregularity,Irregularity at this time point (see morphology dictionary).,requires confirmation,explicit,119
+track_matrix,migration_um,Migration (µm),µm,Migration (µm),Straight-line distance of 'Relative pos X/Y' from the track origin (founder cell: its own first position; daughter: its parent's last position). Checked arithmetically.,validated in data,explicit,119
+track_matrix,migration_directness,Migration directness (migration vs motility),none stated,Migration directness (migration,Migration / Motility (net displacement ÷ accumulated distance). Checked arithmetically.,validated in data,explicit,119
+track_matrix,motility_um,Motility (µm),µm,Motility (µm),"Accumulated path length. For a daughter it starts at the distance from the parent's last position to its first position (not 0), then adds step lengths. Checked arithmetically.",validated in data,explicit,119
+track_matrix,motility_speed_um_h,Motility speed (µm/h),µm/h,Motility speed (µmh),"Mean speed (path length / time), not a per-step instantaneous speed. On the sample it equals the mean over a trailing window (about 2.5 h; the window is inferred from the data, see QC) and the cumulative mean while Age is shorter than the window. Window setting requires confirmation.",requires confirmation,explicit,119
+track_matrix,optical_thickness_avg_um,Optical thickness avg (µm),µm,Optical thickness avg (µm),Mean optical thickness at this time point.,as exported,explicit,109
+track_matrix,optical_volume_um3,Optical volume (µm³),µm³,Optical volume (µm³),Optical volume at this time point.,requires confirmation,explicit,109
+track_obs,age_s,Age (s),s,Cell n (one sheet per tracked family),Time since the track's first observation.,validated in data,explicit,119
+track_obs,area_um2,Area (µm²),µm²,Cell n (one sheet per tracked family),Cell area at this time point (matches the morphology export for linked cells).,as exported,explicit,119
+track_obs,x_centroid_pos_x_m,Centroid pos X (µm),µm,Cell n (one sheet per tracked family),Not in the explicit mapping; kept with an auto-generated name.,requires confirmation,auto,9
+track_obs,x_centroid_pos_y_m,Centroid pos Y (µm),µm,Cell n (one sheet per tracked family),Not in the explicit mapping; kept with an auto-generated name.,requires confirmation,auto,9
+track_obs,end_status,End status,none stated,Cell n (one sheet per tracked family),"Fate recorded on the last row of a track (e.g. Divides, Migrates out of frame, Disappears, Stays until end).",as exported,explicit,119
+track_obs,irregularity,Irregularity,none stated,Cell n (one sheet per tracked family),Irregularity at this time point (see morphology dictionary).,requires confirmation,explicit,119
+track_obs,migration_um,Migration (µm),µm,Cell n (one sheet per tracked family),Straight-line distance of 'Relative pos X/Y' from the track origin (founder cell: its own first position; daughter: its parent's last position). Checked arithmetically.,validated in data,explicit,119
+track_obs,migration_directness,Migration directness (migration vs motility),none stated,Cell n (one sheet per tracked family),Migration / Motility (net displacement ÷ accumulated distance). Checked arithmetically.,validated in data,explicit,119
+track_obs,motility_um,Motility (µm),µm,Cell n (one sheet per tracked family),"Accumulated path length. For a daughter it starts at the distance from the parent's last position to its first position (not 0), then adds step lengths. Checked arithmetically.",validated in data,explicit,119
+track_obs,motility_speed_um_h,Motility speed (µm/h),µm/h,Cell n (one sheet per tracked family),"Mean speed (path length / time), not a per-step instantaneous speed. On the sample it equals the mean over a trailing window (about 2.5 h; the window is inferred from the data, see QC) and the cumulative mean while Age is shorter than the window. Window setting requires confirmation.",requires confirmation,explicit,119
+track_obs,optical_thickness_avg_um,Optical thickness avg (µm),µm,Cell n (one sheet per tracked family),Mean optical thickness at this time point.,as exported,explicit,109
+track_obs,optical_volume_um3,Optical volume (µm³),µm³,Cell n (one sheet per tracked family),Optical volume at this time point.,requires confirmation,explicit,109
+track_obs,rel_x_um,Relative pos X (µm),µm,Cell n (one sheet per tracked family),X position relative to the track origin: founder cells start at 0; a daughter is measured from its parent's last position (validated against centroids of linked cells).,validated in data,explicit,119
+track_obs,rel_y_um,Relative pos Y (µm),µm,Cell n (one sheet per tracked family),Y position relative to the track origin (see Relative pos X).,validated in data,explicit,119
+frames/cells,sample_id,(derived),none stated,-,"Position identifier = relative folder + shared file-name key (e.g. 'A1P6'). It is a pairing key, NOT a donor identifier.",derived by this software,explicit,120
+frames/cells,acquired_at,Date time,none stated,Frame stats; All cells,"Frame acquisition date-time parsed day-first (dd/mm/yyyy hh:mm:ss), 1 s resolution.",as exported,explicit,120
+frames/cells,elapsed_h,(derived),h,-,Hours since the first frame of the same position (derived from Date time).,derived by this software,explicit,120
+frames/cells,elapsed_s,(derived),s,-,Seconds since the first frame of the same position.,derived by this software,explicit,120
+frames/cells/track_obs,frame_no,Frame no. / Source Frames 'Number',none stated,Frame stats; All cells; Info (tracking),Frame index within a position (1-based).,as exported,explicit,120
+frames/cells,frame_id,Frame ID,none stated,Frame stats; All cells,Software frame identifier.,as exported,explicit,120
+cells,cell_id,Cell ID,none stated,All cells,Cell label WITHIN a frame. It is NOT a persistent track identifier (the same cell has different IDs in different frames).,as exported,explicit,120
+cells,region,Region(s),none stated,All cells,Region label; empty in the sample ('No. regions: 0').,as exported,explicit,120
+frames,experiment / group / description,Experiment / Group / Description,none stated,Frame stats,Free-text labels written by the software. Not interpreted as donor/plate identifiers.,as exported,explicit,120
+track_obs,track_id,Cell / Cell name,none stated,Cell n; feature matrices,"Tracked cell name, e.g. 'Cell 4-1-2' (daughter of 'Cell 4-1' by naming convention, validated against End status).",as exported,explicit,120
+track_obs,family,(sheet name),none stated,Cell n,Worksheet name = tracked cell family (root cell and all descendants).,as exported,explicit,120
+track_obs,elapsed_s,Time,s,Cell n; matrices; Averages,Time since the first frame of the position (hh:mm:ss as timedelta in Excel).,as exported,explicit,120
+track_obs,parent_id / generation,(derived from names),none stated,-,Parent track and division generation derived from the dash-separated name.,derived by this software,explicit,120
+track_obs,morph_cell_id / link_status,(derived),none stated,-,"INFERRED link to the morphology cell: exact equality of frame, Area and Optical volume, validated by centroid displacement. Not an identifier supplied by the software.",derived by this software,explicit,120
+track_summary,(all columns),(derived),none stated,-,Per-track kinematics recomputed from Relative pos X/Y; 'exported_*' columns are the last exported cumulative values.,derived by this software,explicit,120
+samples,"donor_id, run_id, well_id, position_id, passage, culture_date, fusion_index",manifest.csv,none stated,-,Provided by the user manifest; 'Unassigned' when missing. Never inferred from file names.,as exported,explicit,120

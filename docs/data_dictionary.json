@@ -8,7 +8,7 @@
   "description": "Area of the segmented cell region.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -19,7 +19,7 @@
   "description": "Breadth of the cell's bounding box (name-based).",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -30,7 +30,7 @@
   "description": "X position of the bounding-box centre in the image.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -41,7 +41,7 @@
   "description": "Y position of the bounding-box centre in the image.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -52,7 +52,7 @@
   "description": "Length of the cell's bounding box (name-based).",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -63,7 +63,7 @@
   "description": "X position of the cell centroid in the image.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -74,7 +74,7 @@
   "description": "Y position of the cell centroid in the image.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -85,7 +85,7 @@
   "description": "Definition not stated in the export; interpretation inferred from the name only (0 = circular, towards 1 = elongated).",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -96,7 +96,7 @@
   "description": "Definition not stated in the export; interpretation inferred from the name only; presumably relates the cell region to its convex hull.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -107,7 +107,7 @@
   "description": "Definition not stated in the export; interpretation inferred from the name only; higher presumably means a less regular outline.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -118,7 +118,7 @@
   "description": "Mean optical path length over the cell (name-based).",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -129,7 +129,7 @@
   "description": "Maximum optical path length within the cell (name-based).",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -140,7 +140,7 @@
   "description": "Mean optical thickness over the cell.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -151,7 +151,7 @@
   "description": "Maximum optical thickness within the cell.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -162,7 +162,7 @@
   "description": "Optical volume of the cell (integral of optical thickness over area; name-based).",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -173,7 +173,7 @@
   "description": "X position of the peak (maximum) value within the cell (name-based).",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -184,7 +184,7 @@
   "description": "Y position of the peak (maximum) value within the cell (name-based).",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -195,7 +195,7 @@
   "description": "Length of the cell outline.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -206,7 +206,7 @@
   "description": "Mean phase shift within the cell; unit not stated in this sheet (Frame info lists phase shift in rad).",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -217,7 +217,7 @@
   "description": "Maximum phase shift within the cell; unit not stated.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -228,7 +228,7 @@
   "description": "Minimum phase shift within the cell; unit not stated.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -239,7 +239,7 @@
   "description": "Standard deviation of phase shift within the cell; unit not stated.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -250,7 +250,7 @@
   "description": "Sum of phase shift over the cell; unit not stated.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -261,7 +261,7 @@
   "description": "Definition not stated in the export; interpretation inferred from the name only.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -272,7 +272,7 @@
   "description": "Definition not stated in the export; interpretation inferred from the name only.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -283,7 +283,7 @@
   "description": "Definition not stated in the export; interpretation inferred from the name only.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -294,7 +294,7 @@
   "description": "Definition not stated in the export; interpretation inferred from the name only.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -305,7 +305,7 @@
   "description": "Definition not stated in the export; interpretation inferred from the name only; differs from 'Hull convexity' in a way the export does not specify.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -316,7 +316,7 @@
   "description": "Texture (GLCM-type) statistic; definition not stated in the export.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -327,7 +327,7 @@
   "description": "Texture (GLCM-type) statistic; definition not stated in the export.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -338,7 +338,7 @@
   "description": "Texture (GLCM-type) statistic; definition not stated in the export.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -349,7 +349,7 @@
   "description": "Texture (GLCM-type) statistic; definition not stated in the export.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -360,7 +360,7 @@
   "description": "Texture (GLCM-type) statistic; definition not stated in the export.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -371,7 +371,7 @@
   "description": "Texture (GLCM-type) statistic; definition not stated in the export.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -382,7 +382,7 @@
   "description": "Texture (GLCM-type) statistic; definition not stated in the export.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -393,7 +393,7 @@
   "description": "Texture (GLCM-type) statistic; definition not stated in the export.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -404,7 +404,7 @@
   "description": "Texture (GLCM-type) statistic; definition not stated in the export.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "cells",
@@ -415,7 +415,7 @@
   "description": "Texture (GLCM-type) statistic; definition not stated in the export.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -426,7 +426,7 @@
   "description": "Software-exported per-frame average of the cell feature. Area of the segmented cell region.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -437,7 +437,7 @@
   "description": "Software-exported per-frame average of the cell feature. Breadth of the cell's bounding box (name-based).",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -448,7 +448,7 @@
   "description": "Software-exported per-frame average of the cell feature. Software-exported frame average; position in pixels.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -459,7 +459,7 @@
   "description": "Software-exported per-frame average of the cell feature. Software-exported frame average; position in pixels.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -470,7 +470,7 @@
   "description": "Software-exported per-frame average of the cell feature. Length of the cell's bounding box (name-based).",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -481,7 +481,7 @@
   "description": "Software-exported per-frame average of the cell feature. X position of the cell centroid in the image.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -492,7 +492,7 @@
   "description": "Software-exported per-frame average of the cell feature. Y position of the cell centroid in the image.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -503,7 +503,7 @@
   "description": "Percentage of the frame covered by cells (as exported).",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -514,7 +514,7 @@
   "description": "Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only (0 = circular, towards 1 = elongated).",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -525,7 +525,7 @@
   "description": "Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only; presumably relates the cell region to its convex hull.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -536,7 +536,7 @@
   "description": "Imaged area in µm².",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -547,7 +547,7 @@
   "description": "Image height in pixels.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -558,7 +558,7 @@
   "description": "Image height in µm.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -569,7 +569,7 @@
   "description": "Pixel size; used to interpret µm positions.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -580,7 +580,7 @@
   "description": "Image width in pixels.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -591,7 +591,7 @@
   "description": "Image width in µm.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -602,7 +602,7 @@
   "description": "Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only; higher presumably means a less regular outline.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -613,7 +613,7 @@
   "description": "Laser wavelength.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -624,7 +624,7 @@
   "description": "Maximum phase shift in the image.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -635,7 +635,7 @@
   "description": "Minimum phase shift in the image.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -646,7 +646,7 @@
   "description": "Number of (non-edge) cells in the frame.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -657,7 +657,7 @@
   "description": "Software-exported per-frame average of the cell feature. Mean optical path length over the cell (name-based).",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -668,7 +668,7 @@
   "description": "Software-exported per-frame average of the cell feature. Maximum optical path length within the cell (name-based).",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -679,7 +679,7 @@
   "description": "Software-exported per-frame average of the cell feature. Mean optical thickness over the cell.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -690,7 +690,7 @@
   "description": "Software-exported per-frame average of the cell feature. Maximum optical thickness within the cell.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -701,7 +701,7 @@
   "description": "Software-exported per-frame average of the cell feature. Optical volume of the cell (integral of optical thickness over area; name-based).",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -712,7 +712,7 @@
   "description": "Software-exported per-frame average of the cell feature. Software-exported frame average; position in pixels.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -723,7 +723,7 @@
   "description": "Software-exported per-frame average of the cell feature. Software-exported frame average; position in pixels.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -734,7 +734,7 @@
   "description": "Software-exported per-frame average of the cell feature. Length of the cell outline.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -745,7 +745,7 @@
   "description": "Software-exported per-frame average of the cell feature. Mean phase shift within the cell; unit not stated in this sheet (Frame info lists phase shift in rad).",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -756,7 +756,7 @@
   "description": "Software-exported per-frame average of the cell feature. Maximum phase shift within the cell; unit not stated.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -767,7 +767,7 @@
   "description": "Software-exported per-frame average of the cell feature. Minimum phase shift within the cell; unit not stated.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -778,7 +778,7 @@
   "description": "Software-exported per-frame average of the cell feature. Standard deviation of phase shift within the cell; unit not stated.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -789,7 +789,7 @@
   "description": "Software-exported per-frame average of the cell feature. Sum of phase shift over the cell; unit not stated.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -800,7 +800,7 @@
   "description": "Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -811,7 +811,7 @@
   "description": "Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -822,7 +822,7 @@
   "description": "Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -833,7 +833,7 @@
   "description": "Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -844,7 +844,7 @@
   "description": "Software-exported per-frame average of the cell feature. Definition not stated in the export; interpretation inferred from the name only; differs from 'Hull convexity' in a way the export does not specify.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -855,7 +855,7 @@
   "description": "Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -866,7 +866,7 @@
   "description": "Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -877,7 +877,7 @@
   "description": "Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -888,7 +888,7 @@
   "description": "Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -899,7 +899,7 @@
   "description": "Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -910,7 +910,7 @@
   "description": "Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -921,7 +921,7 @@
   "description": "Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -932,7 +932,7 @@
   "description": "Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -943,7 +943,7 @@
   "description": "Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -954,7 +954,7 @@
   "description": "Software-exported per-frame average of the cell feature. Texture (GLCM-type) statistic; definition not stated in the export.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames",
@@ -965,7 +965,7 @@
   "description": "Total phase shift in the image (name-based).",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "track_averages",
@@ -976,7 +976,29 @@
   "description": "Average over tracked cells at each time point (software 'Averages' sheet). Cell area at this time point (matches the morphology export for linked cells).",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
+ },
+ {
+  "table": "track_averages",
+  "internal_name": "x_avg_centroid_pos_x_m",
+  "original_name": "Avg. Centroid pos X (µm)",
+  "unit": "µm",
+  "source_sheets": "Averages",
+  "description": "Not in the explicit mapping; kept with an auto-generated name.",
+  "interpretation_status": "requires confirmation",
+  "mapping": "auto",
+  "observed_in_samples": 9
+ },
+ {
+  "table": "track_averages",
+  "internal_name": "x_avg_centroid_pos_y_m",
+  "original_name": "Avg. Centroid pos Y (µm)",
+  "unit": "µm",
+  "source_sheets": "Averages",
+  "description": "Not in the explicit mapping; kept with an auto-generated name.",
+  "interpretation_status": "requires confirmation",
+  "mapping": "auto",
+  "observed_in_samples": 9
  },
  {
   "table": "track_averages",
@@ -987,7 +1009,7 @@
   "description": "Average over tracked cells at each time point (software 'Averages' sheet). Irregularity at this time point (see morphology dictionary).",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "track_averages",
@@ -998,7 +1020,7 @@
   "description": "Average over tracked cells at each time point (software 'Averages' sheet). Straight-line distance of 'Relative pos X/Y' from the track origin (founder cell: its own first position; daughter: its parent's last position). Checked arithmetically.",
   "interpretation_status": "validated in data",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "track_averages",
@@ -1009,7 +1031,7 @@
   "description": "Average over tracked cells at each time point (software 'Averages' sheet). Migration / Motility (net displacement ÷ accumulated distance). Checked arithmetically.",
   "interpretation_status": "validated in data",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "track_averages",
@@ -1020,7 +1042,7 @@
   "description": "Average over tracked cells at each time point (software 'Averages' sheet). Accumulated path length. For a daughter it starts at the distance from the parent's last position to its first position (not 0), then adds step lengths. Checked arithmetically.",
   "interpretation_status": "validated in data",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "track_averages",
@@ -1031,7 +1053,7 @@
   "description": "Average over tracked cells at each time point (software 'Averages' sheet). Mean speed (path length / time), not a per-step instantaneous speed. On the sample it equals the mean over a trailing window (about 2.5 h; the window is inferred from the data, see QC) and the cumulative mean while Age is shorter than the window. Window setting requires confirmation.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "track_averages",
@@ -1042,7 +1064,7 @@
   "description": "Average over tracked cells at each time point (software 'Averages' sheet). Mean optical thickness at this time point.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 109
  },
  {
   "table": "track_averages",
@@ -1053,7 +1075,7 @@
   "description": "Average over tracked cells at each time point (software 'Averages' sheet). Optical volume at this time point.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 109
  },
  {
   "table": "track_averages",
@@ -1064,7 +1086,7 @@
   "description": "Not in the explicit mapping; kept with an auto-generated name.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "track_matrix",
@@ -1075,7 +1097,40 @@
   "description": "Cell area at this time point (matches the morphology export for linked cells).",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
+ },
+ {
+  "table": "track_matrix",
+  "internal_name": "x_cell_tree",
+  "original_name": "Cell tree",
+  "unit": "none stated",
+  "source_sheets": "Cell tree",
+  "description": "Not in the explicit mapping; kept with an auto-generated name.",
+  "interpretation_status": "requires confirmation",
+  "mapping": "auto",
+  "observed_in_samples": 2
+ },
+ {
+  "table": "track_matrix",
+  "internal_name": "x_centroid_pos_x_m",
+  "original_name": "Centroid pos X (µm)",
+  "unit": "µm",
+  "source_sheets": "Centroid pos X (µm)",
+  "description": "Not in the explicit mapping; kept with an auto-generated name.",
+  "interpretation_status": "requires confirmation",
+  "mapping": "auto",
+  "observed_in_samples": 9
+ },
+ {
+  "table": "track_matrix",
+  "internal_name": "x_centroid_pos_y_m",
+  "original_name": "Centroid pos Y (µm)",
+  "unit": "µm",
+  "source_sheets": "Centroid pos Y (µm)",
+  "description": "Not in the explicit mapping; kept with an auto-generated name.",
+  "interpretation_status": "requires confirmation",
+  "mapping": "auto",
+  "observed_in_samples": 9
  },
  {
   "table": "track_matrix",
@@ -1086,7 +1141,7 @@
   "description": "Irregularity at this time point (see morphology dictionary).",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "track_matrix",
@@ -1097,7 +1152,7 @@
   "description": "Straight-line distance of 'Relative pos X/Y' from the track origin (founder cell: its own first position; daughter: its parent's last position). Checked arithmetically.",
   "interpretation_status": "validated in data",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "track_matrix",
@@ -1108,7 +1163,7 @@
   "description": "Migration / Motility (net displacement ÷ accumulated distance). Checked arithmetically.",
   "interpretation_status": "validated in data",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "track_matrix",
@@ -1119,7 +1174,7 @@
   "description": "Accumulated path length. For a daughter it starts at the distance from the parent's last position to its first position (not 0), then adds step lengths. Checked arithmetically.",
   "interpretation_status": "validated in data",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "track_matrix",
@@ -1130,7 +1185,7 @@
   "description": "Mean speed (path length / time), not a per-step instantaneous speed. On the sample it equals the mean over a trailing window (about 2.5 h; the window is inferred from the data, see QC) and the cumulative mean while Age is shorter than the window. Window setting requires confirmation.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "track_matrix",
@@ -1141,7 +1196,7 @@
   "description": "Mean optical thickness at this time point.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 109
  },
  {
   "table": "track_matrix",
@@ -1152,7 +1207,7 @@
   "description": "Optical volume at this time point.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 109
  },
  {
   "table": "track_obs",
@@ -1163,7 +1218,7 @@
   "description": "Time since the track's first observation.",
   "interpretation_status": "validated in data",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "track_obs",
@@ -1174,7 +1229,29 @@
   "description": "Cell area at this time point (matches the morphology export for linked cells).",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
+ },
+ {
+  "table": "track_obs",
+  "internal_name": "x_centroid_pos_x_m",
+  "original_name": "Centroid pos X (µm)",
+  "unit": "µm",
+  "source_sheets": "Cell n (one sheet per tracked family)",
+  "description": "Not in the explicit mapping; kept with an auto-generated name.",
+  "interpretation_status": "requires confirmation",
+  "mapping": "auto",
+  "observed_in_samples": 9
+ },
+ {
+  "table": "track_obs",
+  "internal_name": "x_centroid_pos_y_m",
+  "original_name": "Centroid pos Y (µm)",
+  "unit": "µm",
+  "source_sheets": "Cell n (one sheet per tracked family)",
+  "description": "Not in the explicit mapping; kept with an auto-generated name.",
+  "interpretation_status": "requires confirmation",
+  "mapping": "auto",
+  "observed_in_samples": 9
  },
  {
   "table": "track_obs",
@@ -1185,7 +1262,7 @@
   "description": "Fate recorded on the last row of a track (e.g. Divides, Migrates out of frame, Disappears, Stays until end).",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "track_obs",
@@ -1196,7 +1273,7 @@
   "description": "Irregularity at this time point (see morphology dictionary).",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "track_obs",
@@ -1207,7 +1284,7 @@
   "description": "Straight-line distance of 'Relative pos X/Y' from the track origin (founder cell: its own first position; daughter: its parent's last position). Checked arithmetically.",
   "interpretation_status": "validated in data",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "track_obs",
@@ -1218,7 +1295,7 @@
   "description": "Migration / Motility (net displacement ÷ accumulated distance). Checked arithmetically.",
   "interpretation_status": "validated in data",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "track_obs",
@@ -1229,7 +1306,7 @@
   "description": "Accumulated path length. For a daughter it starts at the distance from the parent's last position to its first position (not 0), then adds step lengths. Checked arithmetically.",
   "interpretation_status": "validated in data",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "track_obs",
@@ -1240,7 +1317,7 @@
   "description": "Mean speed (path length / time), not a per-step instantaneous speed. On the sample it equals the mean over a trailing window (about 2.5 h; the window is inferred from the data, see QC) and the cumulative mean while Age is shorter than the window. Window setting requires confirmation.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "track_obs",
@@ -1251,7 +1328,7 @@
   "description": "Mean optical thickness at this time point.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 109
  },
  {
   "table": "track_obs",
@@ -1262,7 +1339,7 @@
   "description": "Optical volume at this time point.",
   "interpretation_status": "requires confirmation",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 109
  },
  {
   "table": "track_obs",
@@ -1273,7 +1350,7 @@
   "description": "X position relative to the track origin: founder cells start at 0; a daughter is measured from its parent's last position (validated against centroids of linked cells).",
   "interpretation_status": "validated in data",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "track_obs",
@@ -1284,7 +1361,7 @@
   "description": "Y position relative to the track origin (see Relative pos X).",
   "interpretation_status": "validated in data",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 119
  },
  {
   "table": "frames/cells",
@@ -1295,7 +1372,7 @@
   "description": "Position identifier = relative folder + shared file-name key (e.g. 'A1P6'). It is a pairing key, NOT a donor identifier.",
   "interpretation_status": "derived by this software",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 120
  },
  {
   "table": "frames/cells",
@@ -1306,7 +1383,7 @@
   "description": "Frame acquisition date-time parsed day-first (dd/mm/yyyy hh:mm:ss), 1 s resolution.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 120
  },
  {
   "table": "frames/cells",
@@ -1317,7 +1394,7 @@
   "description": "Hours since the first frame of the same position (derived from Date time).",
   "interpretation_status": "derived by this software",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 120
  },
  {
   "table": "frames/cells",
@@ -1328,7 +1405,7 @@
   "description": "Seconds since the first frame of the same position.",
   "interpretation_status": "derived by this software",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 120
  },
  {
   "table": "frames/cells/track_obs",
@@ -1339,7 +1416,7 @@
   "description": "Frame index within a position (1-based).",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 120
  },
  {
   "table": "frames/cells",
@@ -1350,7 +1427,7 @@
   "description": "Software frame identifier.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 120
  },
  {
   "table": "cells",
@@ -1361,7 +1438,7 @@
   "description": "Cell label WITHIN a frame. It is NOT a persistent track identifier (the same cell has different IDs in different frames).",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 120
  },
  {
   "table": "cells",
@@ -1372,7 +1449,7 @@
   "description": "Region label; empty in the sample ('No. regions: 0').",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 120
  },
  {
   "table": "frames",
@@ -1383,7 +1460,7 @@
   "description": "Free-text labels written by the software. Not interpreted as donor/plate identifiers.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 120
  },
  {
   "table": "track_obs",
@@ -1394,7 +1471,7 @@
   "description": "Tracked cell name, e.g. 'Cell 4-1-2' (daughter of 'Cell 4-1' by naming convention, validated against End status).",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 120
  },
  {
   "table": "track_obs",
@@ -1405,7 +1482,7 @@
   "description": "Worksheet name = tracked cell family (root cell and all descendants).",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 120
  },
  {
   "table": "track_obs",
@@ -1416,7 +1493,7 @@
   "description": "Time since the first frame of the position (hh:mm:ss as timedelta in Excel).",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 120
  },
  {
   "table": "track_obs",
@@ -1427,7 +1504,7 @@
   "description": "Parent track and division generation derived from the dash-separated name.",
   "interpretation_status": "derived by this software",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 120
  },
  {
   "table": "track_obs",
@@ -1438,7 +1515,7 @@
   "description": "INFERRED link to the morphology cell: exact equality of frame, Area and Optical volume, validated by centroid displacement. Not an identifier supplied by the software.",
   "interpretation_status": "derived by this software",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 120
  },
  {
   "table": "track_summary",
@@ -1449,7 +1526,7 @@
   "description": "Per-track kinematics recomputed from Relative pos X/Y; 'exported_*' columns are the last exported cumulative values.",
   "interpretation_status": "derived by this software",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 120
  },
  {
   "table": "samples",
@@ -1460,6 +1537,6 @@
   "description": "Provided by the user manifest; 'Unassigned' when missing. Never inferred from file names.",
   "interpretation_status": "as exported",
   "mapping": "explicit",
-  "observed_in_samples": 1
+  "observed_in_samples": 120
  }
 ]

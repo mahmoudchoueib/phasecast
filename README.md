@@ -3,84 +3,73 @@ AI-driven analysis of longitudinal quantitative phase imaging for early, non-des
 
 ---
 
-# HoloMonitor Cell Morphology and Tracking Explorer
+# PhaseCast - forecasting cell potency from early quantitative phase imaging
 
-Local Streamlit dashboard for exploratory analysis of HoloMonitor `-MOR.xlsx` (morphology) and `-TRACKING.xlsx`
-(tracking) exports. Exploratory only: no machine learning, no fusion-index correlation, no biological claims.
-Original Excel files are only ever **read**.
+PhaseCast is a local research dashboard (Python, Streamlit, Plotly, pandas) for HoloMonitor holographic-microscopy
+exports of human skeletal muscle-derived cells. It reads morphology (`-MOR.xlsx`) and tracking (`-TRACKING.xlsx`)
+exports from many donors, wells and imaging positions, links them to donor-level biological endpoints (fusion index,
+desmin, acetylcholinesterase) **only where donor identity is confirmed**, and provides exploratory analysis and
+early-window feature engineering for later prediction work.
 
-## Windows setup (PowerShell, in this folder)
+**Current status (chunk 1):** data foundations - ingestion, plate/donor mapping, endpoint integration, data quality,
+and the exploratory analysis pages. **No prediction models and no endpoint correlations yet** (see
+[docs/IMPLEMENTATION_STATUS.md](docs/IMPLEMENTATION_STATUS.md)). Original Excel files are only ever read.
+
+## Launch (Windows PowerShell)
 
 ```powershell
-# 1. Python 3.11+ required (3.12 used in development). Create and activate a virtual environment:
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1          # if blocked: Set-ExecutionPolicy -Scope Process Bypass
-# 2. Install dependencies
-pip install -r requirements.txt
-# 3. Launch
-streamlit run app.py
+cd "C:\Studies\Phd\Project 31\data"
+.\.venv\Scripts\python.exe -m streamlit run app.py
 ```
 
-(If `python` is not found, use any Python 3.11+ interpreter, e.g. the Spyder runtime at
-`C:\Users\<you>\AppData\Local\spyder-6\envs\spyder-runtime\python.exe -m venv .venv`.)
-In VS Code: open the folder, select the `.venv` interpreter, run the command above in the integrated terminal.
-The app opens at http://localhost:8501. Click **Scan folder and import** in the sidebar the first time
-(by default it searches this folder recursively).
+Open http://localhost:8501. First time: sidebar → *Data location & import* → **Scan folder and import** (about 3 minutes
+for 119 position pairs; later scans only process new/changed files). Setup from scratch:
 
-## Adding more data (no code changes)
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+```
 
-1. Copy `XXX-MOR.xlsx` + `XXX-TRACKING.xlsx` into the data directory (any sub-folders). Files are paired by shared name key
-   (`A1P6-MOR` ↔ `A1P6-TRACKING`) **within the same folder**; recognition also checks worksheet structure.
-2. Sidebar → **Scan folder and import**. Only new/changed files are processed (SHA-256 fingerprint); failures are logged and skipped.
-3. Assign metadata on *Dataset Overview → Sample metadata*, or edit `manifest.csv` (see `manifest.sample.csv`):
-   `sample_key, donor_id, run_id, well_id, position_id, passage, culture_date, fusion_index, notes`.
-   Samples in different folders may reuse the same file name; their `sample_key` is `subfolder/A1P6`.
-   `A1P6` is **not** treated as a donor id; donors stay "Unassigned" until the manifest says otherwise.
-Command line equivalent: `python -m hmx.cli ingest [--force] [--only A1P6]`.
+Tests: `.\.venv\Scripts\python.exe -m pytest -q`.
 
-## What is implemented
+## Pages
 
-| Page | Content |
-|---|---|
-| Demo Overview | 5 auto-generated analyses with computed observations, cautions, CSV + PNG export |
-| Dataset Overview | counts, time span, missingness, warnings, searchable dataset table, manifest editor |
-| Morphology Explorer | any cell/frame feature vs time; mean/median; SD/IQR band; raw/smoothed; equal-frame vs pooled weighting; CSV |
-| Cell Population Distributions | histogram/box/violin, preset 0–6…0–72 h or custom windows A/B, summary stats, effect sizes, heterogeneity over time |
-| Feature Relationships | scatter, Pearson/Spearman, trend line, heatmap, colour by time/donor/position/well |
-| Cell Tracking Explorer | trajectories (origin / family / imaging-field frames), speed, displacement, directness, divisions, cell cycle, lineage |
-| Early-Window Features | per position × cutoff (6/12/24/36/48/72 h) cell-, frame- and trajectory-level features; CSV/Parquet export |
-| Quality Control & Dictionary | issues, missingness, duplicates, intervals, flagged records, import log, searchable dictionary, QC report |
+| Section | Page | Purpose |
+|---|---|---|
+| Project | Research Overview | project question, per-donor readiness, items needing a decision |
+| Data | **Plate Mapper** | interactive plate layouts, donor colours, per-well details, audited manual donor assignment |
+| Data | Dataset Inventory | every file / position / folder / donor discovered |
+| Data | Endpoint Data Preview | 12-donor endpoint table, units, warnings, exact/alias donor linking |
+| Data | Data Quality and Mapping | held-out positions, label conflicts, pairing problems, decisions with evidence |
+| Analysis | Morphology Explorer · Cell Population Distributions · Feature Relationships · Cell Tracking Explorer · Early-Window Features | exploratory analysis (unresolved/flagged positions excluded by default) |
+| Reference | Demo Overview · Quality Control & Dictionary · Dataset Overview (legacy) | presentation figures, QC, data dictionary |
 
-Layout: `hmx/` (readers, discovery, parsing, spec = explicit feature mapping, tracks, validation, metadata, store = ingestion + Parquet,
-analysis, features, viz, page_*/ui_common = dashboard), `tests/`, `processed/` (generated Parquet), `docs/data_dictionary.*` (generated).
-Tests: `pytest -q` (21 tests; includes sample-file loading, reconciliation, causality of early windows, duplicates, missing files).
+## Data layout expected
 
-## Findings about the file structure (verified on the sample, encoded in the code and QC checks)
+```
+raw_data/
+  16M/  A1P2-MOR.xlsx  A1P2-TRACKING.xlsx  ...      <- folder named <age><M|F> = donor label (user's filing)
+  PLATE2-25F_40M_34F_20M/ ...                        <- several labels = ambiguous -> wells stay UNRESOLVED
+  Combined Data Jonny Project.xlsx                   <- endpoint workbook (first header cell "Donor")
+metadata/   plates.csv  donor_map.csv  donor_map_history.csv  donor_aliases.csv  sample_resolution.csv   (editable, created by the app)
+processed/  Parquet cache (safe to delete)
+```
 
-* Morphology: `Frame stats` (145 frames; frame data + software-computed per-frame averages), `All cells` (2137 cells; edge cells excluded
-  by the software), `Frame info` (image scale 0.55332 µm/pxl, 1024 px, 635 nm laser). Timestamps are day-first, 1 s resolution, 30-min interval.
-* Morphology `Cell ID` is a **per-frame label**, not a persistent track ID.
-* Tracking: 8 feature×time matrices, 71 per-family sheets (`Cell n`, containing all descendants `Cell n-1-2…`), `Averages`, `General stats`, `Info`.
-  Matrices and per-cell sheets agree exactly. `Cell feature graphs` is empty (title only).
-* **Relative position** is relative to the track's own first position for founder cells but to the **parent's last position** for daughters
-  (checked against centroids). The app derives lineage-continuous coordinates from this.
-* Exported *Migration* = distance from that origin; *Motility* = accumulated path (for daughters it starts at the parent→daughter offset, not 0);
-  *Motility speed* is a **windowed mean speed** (≈2.5 h window inferred from the data), not per-step speed. Per-step kinematics are recomputed.
-* Division = `End status` "Divides"; daughters are named `<parent>-1/-2`. Cell-cycle length = daughters' first appearance − own first appearance;
-  this reproduces the software's own 41 complete cycles and mean 5.84 h.
-* Tracking and morphology share no identifier; observations are linked **only by exact equality of frame, Area and Optical volume** and validated
-  against positions (84.6 % of tracking observations link; the rest are presumably edge cells - not confirmed). The link is opt-in in *Feature Relationships*.
+Plate, well and position come from the text inside each file ("Well A1 - Position 6"); the plate is identified by the
+experiment name stored in the files, so identical well names on different experiments never collide.
 
-## Assumptions and limitations
+## Principles
 
-* Donor/run/passage/culture date/fusion index come only from the manifest. `Experiment` text ("…Jonny PLATE3") and `Group` are shown, never interpreted.
-  Well/position are read from `Group` ("Well A1 - Position 6") and overridden (with a warning on conflict) by the manifest.
-* 69 dictionary entries are marked **requires confirmation**: the export does not define convexity, irregularity, roughness, texture, phase-shift sums, etc.;
-  descriptions are name-based. Confirm against the HoloMonitor documentation before presenting definitions.
-* Statistics are descriptive; **no p-values** are shown because repeated observations are not independent. Donor is the biological unit once more donors exist.
-* Elapsed time is relative to the first frame of each position (positions with different start times are aligned at 0).
-* CSV support is limited: single-table CSVs resembling `All cells` / `Frame stats` are read, pairing by name only; untested on real HoloMonitor CSV exports.
-* Tracking-only or morphology-only positions are imported with warnings. Only the one sample position was available, so multi-donor behaviour is tested with
-  copies of it (synthetic), not real multi-donor data.
-* PNG export: camera icon in each plot, or "Prepare PNG" (needs Chrome/Edge for kaleido).
-* Very large collections (hundreds of positions) load all Parquet tables into memory; filtering is in-memory. Not benchmarked beyond the sample.
+* Donor → experiment/plate → well → position → frame → cell hierarchy preserved; cells/frames/positions/wells are not donors.
+* No donor is inferred from age, sex, morphology, motility or endpoint values; donor names are matched exactly or through an explicit alias table.
+* Unresolved or conflicting positions are excluded from donor-level analyses by default; every decision is stored with its evidence and an audit trail.
+* Nothing is silently changed or removed: suspicious values are flagged, not fixed.
+
+## Documentation
+
+[Audit](docs/PHASECAST_AUDIT.md) · [User guide](docs/USER_GUIDE.md) · [Developer walkthrough](docs/DEVELOPER_WALKTHROUGH.md) ·
+[Data dictionary](docs/DATA_DICTIONARY.md) · [Scientific assumptions](docs/SCIENTIFIC_ASSUMPTIONS.md) ·
+[Implementation status](docs/IMPLEMENTATION_STATUS.md) · [Demo guide](DEMO_GUIDE.md)
+
+Package layout: `app.py` (entry), `hmx/` (discovery, parsing, spec, tracks, validation, mapping, endpoints, store, analysis,
+features, viz, branding, page_*), `tests/`, `docs/`, `.streamlit/config.toml` (theme).

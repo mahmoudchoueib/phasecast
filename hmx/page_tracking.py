@@ -196,7 +196,7 @@ def early_window(ctx: Ctx) -> None:
         return
     ds = ctx.ds
     st.info("Each row is one imaging position at one cutoff T. Only frames, cells and tracking observations with elapsed time ≤ T are used "
-            "(`window_max_elapsed_h` shows the latest observation actually used). No fusion-index information is used here.")
+            "(`window_max_elapsed_h` shows the latest observation actually used). No endpoint (fusion index) information is used to build these features.")
     dc, df_ = default_feature_sets(ds.cells, ds.frames)
     c = st.columns([2, 3, 3])
     cutoffs = c[0].multiselect("Observation cutoffs (h)", CUTOFFS_H, default=[6, 12, 24])
@@ -250,16 +250,17 @@ def early_window(ctx: Ctx) -> None:
 
     st.subheader("Donor-level aggregation and fusion-index join (prepared, not analysed)")
     ep = ds.endpoints
-    n_assigned = int((ds.samples["donor_id"] != "Unassigned").sum())
+    sel_donors = set(ds.samples["donor_id"].astype(str)) - {"Unassigned", "Unresolved"}
+    with_ep = sel_donors & (set(ep["donor_id"]) if len(ep) else set())
     c = st.columns(3)
-    c[0].metric("Positions with donor assigned", f"{n_assigned}/{len(ds.samples)}")
-    c[1].metric("Endpoint values supplied (fusion index)", len(ep))
-    c[2].metric("Donors with endpoint", ep["donor_id"].nunique() if len(ep) else 0)
+    c[0].metric("Eligible positions in this table", f"{len(ds.samples)}")
+    c[1].metric("Donors in this selection", len(sel_donors))
+    c[2].metric("…with an endpoint row", len(with_ep))
     if ep.empty:
-        st.info("No fusion-index values have been supplied (add them to the manifest). Accordingly **no correlation with fusion index is calculated**.")
+        st.info("No endpoint workbook was found. Accordingly **no correlation with fusion index is calculated**.")
     else:
-        st.success("Endpoint values are present. The joined table below is ready for later modelling; this version deliberately does not compute "
-                   "fusion-index correlations or models.")
+        st.success("Endpoint values are linked by exact donor id. The joined table below is ready for later modelling; this version "
+                   "deliberately does not compute endpoint correlations or models. Unresolved wells are excluded by default.")
     with st.expander("Preview donor-level table and endpoint join"):
         don = aggregate_to_donor(table)
         st.dataframe(join_endpoints(don, ep, "donor"), hide_index=True, width="stretch")

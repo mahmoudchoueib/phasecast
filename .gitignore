@@ -225,3 +225,6 @@ __marimo__/
 processed/
 manifest.csv
 .pytest_cache/
+processed*/
+metadata/*.csv
+# raw_data/ holds only .xlsx (ignored above) - donor decisions in metadata/ are kept local by default

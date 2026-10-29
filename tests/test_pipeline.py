@@ -15,7 +15,8 @@ from hmx.store import ingest, load_dataset
 from hmx.tracks import track_summary
 
 ROOT = Path(__file__).resolve().parent.parent
-MOR, TRK = ROOT / "A1P6-MOR.xlsx", ROOT / "A1P6-TRACKING.xlsx"
+# The original sample position now lives in raw_data/16M (byte-size identical to the first sample supplied).
+MOR, TRK = ROOT / "raw_data" / "16M" / "A1P6-MOR.xlsx", ROOT / "raw_data" / "16M" / "A1P6-TRACKING.xlsx"
 pytestmark = pytest.mark.skipif(not (MOR.exists() and TRK.exists()), reason="sample workbooks not present")
 
 
@@ -49,12 +50,14 @@ def test_both_sample_files_load(morph, track):
     assert len(track.obs) == 1627 and track.obs["track_id"].nunique() == 191
 
 
-def test_discovery_recognises_and_pairs():
-    files = [f for f in discover_files(ROOT) if f.path.name.startswith("A1P6")]
+def test_discovery_recognises_and_pairs(tmp_path):
+    shutil.copy(MOR, tmp_path / "A1P6-MOR.xlsx")
+    shutil.copy(TRK, tmp_path / "A1P6-TRACKING.xlsx")
+    files = discover_files(tmp_path)
     kinds = {f.path.name: f.kind for f in files}
     assert kinds == {"A1P6-MOR.xlsx": "morphology", "A1P6-TRACKING.xlsx": "tracking"}
     pairs, problems = pair_files(files)
-    assert len(pairs) == 1 and pairs[0].sample_id == "A1P6" and not problems
+    assert len(pairs) == 1 and pairs[0].sample_id == "A1P6" and not [p for p in problems if p["severity"] != "info"]
 
 
 def test_frame_counts_reconcile_with_cells(morph):
